@@ -20,6 +20,15 @@ public class ItemService {
         itemRepository.save(item);
     }
 
+    //변경감지와 병합 설명
+//    @Transactional
+//    public void updateItem(Long itemId, Book param) {
+//        Item findItem = itemRepository.findOne(itemId);
+//        findItem.setPrice(param.getPrice());
+//        findItem.setName(param.getName());
+//        findItem.setStockQuantity(param.getStockQuantity());
+//    }
+
     public List<Item> findItems() {
         return itemRepository.findAll();
     }
