@@ -15,7 +15,8 @@ import javax.persistence.EntityManager;
 class MemberServiceTest {
 
     @Autowired MemberService memberService;
-    @Autowired MemberRepository memberRepository;
+    @Autowired
+    MemberRepository memberRepository;
     @Autowired EntityManager em;
 
     @Test
